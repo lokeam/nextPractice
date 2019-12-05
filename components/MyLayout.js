@@ -22,7 +22,7 @@ const WithLayout = Page => {
 export default WithLayout;
 **/
 
-/* Method 2 Page content as a prop */
+/* Method 2 of creating a Layout Component - Page content as a prop */
 /**
 const Layout = props => {
   return () => (
@@ -39,6 +39,7 @@ export default Layout;
 const Layout = props => (
   <div style={layoutStyle}>
     <Header />
+    {props.children}
   </div>
 );
 
